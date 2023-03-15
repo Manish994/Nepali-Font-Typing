@@ -14,7 +14,6 @@ function App() {
     googleTransliterate(request, value, inputLanguage, maxResult).then(
       function (response) {
         if (response.constructor === Array && response.length > 0) {
-          debugger;
           let res = [];
           response.forEach((item) => res.push(item[0]));
           console.log(res);
